@@ -61,7 +61,7 @@ startGame=()=>{
 getNewQuestion=()=>{
     if(availableQuestions.length===0||index>=MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore',score);
-        return  window.location.assign('end.html');
+        return  window.location.assign('./end.html');
     }
     questionCounter++;
     questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`
